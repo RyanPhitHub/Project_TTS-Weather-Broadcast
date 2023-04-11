@@ -9,9 +9,9 @@ import speech
 class audio:
     def __init__(self):
         super().__init__()
-        bck_pin = Pin(26)
-        ws_pin = Pin(25)
-        sdout_pin = Pin(27)
+        bck_pin = Pin(28)
+        ws_pin = Pin(27)
+        sdout_pin = Pin(22)
         self.audio_out = I2S(I2S.NUM0,
                 bck=bck_pin,
                 ws=ws_pin,
